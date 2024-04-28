@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-sky-500 to-indigo-500">
+    <nav class="bg-gradient-to-r from-sky-500 to-indigo-500 h-20 flex space-x-11 shadow-xl rounded-sm">
+        <div class="flex">
+            <div>
+                <img src="amcharts_weather_icons_1.0.0 (1)/animated/cloudy-day-1.svg" alt="logo" class="h-20 mx-5">
+            </div>
+            <h1 class="font-serif mx-8 text-white mt-5 text-2xl">Weather.io</h1>
+        </div>
+    </nav>
+
+    <div class="border-2 shadow-2xl h-60 w-96 rounded-xl mx-auto my-20">
+        <section class="h-11 mx-auto flex">
+            <div class="mx-auto mt-4">
+                <div class="flex">
+                    <input type="text" placeholder="City Name.." id="Input_box" class="shadow-lg text-center rounded-xl hover:delay-100">
+                    <button id="search_button" class="text-white mx-5 px-2 bg-opacity-55 font-thin rounded-sm" onclick="getWeather()">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="h-24 mt-4">
+            <div class="bg-white text-white flex">
+                <img src="" id="weather_img" alt="weather-icon" class="h-24 w-24">
+                <div>
+                    <pre id="temp" class="mt-5">
+                        <sup></sup></pre>
+                        <h3 id="weather_description"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
